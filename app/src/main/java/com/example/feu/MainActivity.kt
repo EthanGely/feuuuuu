@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
         val redButton = findViewById<Button>(R.id.redButton)
         val stopButton = findViewById<Button>(R.id.stopButton)
 
-        greenButton.setOnClickListener { sendTrafficState("Green", statusText) }
-        yellowButton.setOnClickListener { sendTrafficState("Yellow", statusText) }
-        redButton.setOnClickListener { sendTrafficState("Red", statusText) }
-        stopButton.setOnClickListener { sendTrafficState("Off", statusText) }
+        greenButton.setOnClickListener { sendTrafficState("green", statusText) }
+        yellowButton.setOnClickListener { sendTrafficState("yellow", statusText) }
+        redButton.setOnClickListener { sendTrafficState("red", statusText) }
+        stopButton.setOnClickListener { sendTrafficState("off", statusText) }
     }
 
     private fun sendTrafficState(state: String, statusText: TextView) {
