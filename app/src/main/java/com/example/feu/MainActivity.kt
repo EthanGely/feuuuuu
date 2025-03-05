@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
+                e.printStackTrace() // 🔹 Affiche l'erreur exacte dans Logcat
                 runOnUiThread { statusText.text = "Erreur : Impossible d'envoyer la commande" }
             }
 
