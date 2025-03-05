@@ -9,7 +9,7 @@ import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
 
-    private val esp32Ip = "http://192.168.69.46" // 🔹 Remplace par l'IP de ton ESP32
+    private val esp32Ip = "http://192.168.93.16" // 🔹 Remplace par l'IP de ton ESP32
     private val client = OkHttpClient()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun sendTrafficState(state: String, statusText: TextView) {
-        val url = "$esp32Ip/set?state=$state"
+        val url = "$esp32Ip/on?color=$state"
 
         val request = Request.Builder()
             .url(url)
