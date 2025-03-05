@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Zone to display current light status -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Status: Off"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Container for the traffic light buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/statusText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_height="1000dp"
+        android:layout_width="100dp">
+
+        <!-- Green button for traffic light -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/greenButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Green"
+            android:background="@drawable/circular_button_green"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+        <!-- Yellow button for traffic light -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yellowButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Yellow"
+            android:background="@drawable/circular_button_yellow"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+
+        <!-- Red button for traffic light -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/redButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Red"
+            android:background="@drawable/circular_button_red"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+
+
+        <!-- Stop button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stopButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="OFF"
+            android:background="@drawable/circular_button_stop"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
